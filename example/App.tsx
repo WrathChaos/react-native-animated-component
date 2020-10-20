@@ -1,25 +1,48 @@
 import React from "react";
 import { View, Text, StatusBar, SafeAreaView } from "react-native";
+import AppleHeader from "react-native-apple-header";
 import RNAnimated from "react-native-animated-component";
+import RNBounceable from "@freakycoder/react-native-bounceable";
 
-const staticData = [1, 2, 3, 4, 5, 6, 7, 1, 1, 4, 5, 31];
+const staticData = [
+  "Quidditch",
+  "Basketball",
+  "Running",
+  "Football",
+  "Baseball",
+  "Rugby",
+  "Gymnastics",
+  "Cycling",
+  "Tennis",
+  "Golf",
+  "Soccer",
+  "Yoga",
+];
 
 const App = () => {
-  const renderItem = () => (
-    <View
+  const renderItem = (data: any) => (
+    <RNBounceable
+      bounceEffect={0.97}
       key={Math.random()}
       style={{
         height: 50,
-        width: 250,
+        width: 325,
         marginTop: 12,
         borderRadius: 12,
         alignItems: "center",
         justifyContent: "center",
         backgroundColor: "#fff",
+        shadowRadius: 3,
+        shadowOpacity: 0.2,
+        shadowColor: "#757575",
+        shadowOffset: {
+          width: 0,
+          height: 3,
+        },
       }}
     >
-      <Text>Hello</Text>
-    </View>
+      <Text>{data}</Text>
+    </RNBounceable>
   );
 
   return (
@@ -28,17 +51,20 @@ const App = () => {
       <SafeAreaView
         style={{
           flex: 1,
-          backgroundColor: "#ccc",
-          alignItems: "center",
-          justifyContent: "center",
         }}
       >
+        <AppleHeader
+          imageSource={{
+            uri:
+              "https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+          }}
+        />
         <RNAnimated
-          appearFrom="right"
+          appearFrom="bottom"
           animationDuration={1300}
           style={{ alignItems: "center" }}
         >
-          {staticData.map(() => renderItem())}
+          {staticData.map((item) => renderItem(item))}
         </RNAnimated>
       </SafeAreaView>
     </>

@@ -10,9 +10,11 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@freakycoder/react-native-bounceable": "^0.2.2",
     "react": "16.13.1",
     "react-native": "0.63.3",
-    "react-native-animated-component": "^0.1.0"
+    "react-native-animated-component": "^0.1.0",
+    "react-native-apple-header": "^0.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
