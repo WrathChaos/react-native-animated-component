@@ -102,11 +102,15 @@ should work of the example project.
 ## Future Plans
 
 - [x] ~~LICENSE~~
+- [ ] More Animation Type
+  - [x] ~~Opacity~~
+  - [ ] Solid Movement
+  - [ ] Scale
 - [ ] Write an article about the lib on Medium
 
-# Change Log
+# Credit
 
-Change log will be here !
+Mainly inspired from [aarkalyk's awesome polls app](https://github.com/aarkalyk/react-native-polls-api-example)
 
 ## Author
 
