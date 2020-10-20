@@ -1,13 +1,13 @@
 {
-  "name": "react-native-animated",
+  "name": "react-native-animated-component",
   "version": "0.0.1",
   "description": "Animate any components with React Native Animated",
   "main": "./build/dist/index.js",
-  "repository": "git@github.com:WrathChaos/react-native-animated.git",
+  "repository": "git@github.com:WrathChaos/react-native-animated-component.git",
   "author": "FreakyCoder <kurayogun@gmail.com>",
   "license": "MIT",
   "homepage": "https://www.freakycoder.com",
-  "bugs": "https://github.com/WrathChaos/react-native-animated/issues",
+  "bugs": "https://github.com/WrathChaos/react-native-animated-component/issues",
   "keywords": [
     "FreakyCoder",
     "freakycoder",
