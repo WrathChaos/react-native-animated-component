@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-  FlatList,
-} from "react-native";
-import RNAnimated from "./lib/RNAnimated";
+import { View, Text, StatusBar, SafeAreaView } from "react-native";
+import RNAnimated from "./build/dist/RNAnimated";
+
 const staticData = [1, 2, 3, 4, 5, 6, 7, 1, 1, 4, 5, 31];
 
 const App = () => {
@@ -45,7 +38,7 @@ const App = () => {
           animationDuration={1300}
           style={{ alignItems: "center" }}
         >
-          {staticData.map((item) => renderItem())}
+          {staticData.map(() => renderItem())}
         </RNAnimated>
       </SafeAreaView>
     </>
