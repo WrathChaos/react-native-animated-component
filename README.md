@@ -88,7 +88,7 @@ should work of the example project.
 
 # Credit
 
-Mainly inspired from [aarkalyk's awesome polls app](https://github.com/aarkalyk/react-native-polls-api-example)
+Heavily inspired from [aarkalyk's awesome polls app](https://github.com/aarkalyk/react-native-polls-api-example)
 
 ## Author
 
