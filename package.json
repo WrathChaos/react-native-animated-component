@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-component",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Animate any components with React Native Animated Component",
   "main": "./build/dist/RNAnimated.js",
   "repository": "git@github.com:WrathChaos/react-native-animated-component.git",

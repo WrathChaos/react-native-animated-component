@@ -3,12 +3,14 @@ import { View, StyleProp, ViewStyle, FlatList, Alert } from "react-native";
 /**
  * ? Local Imports
  */
-import AnimatedChildren, { AppearFrom } from "./components/AnimatedChildren";
+import AnimatedChildren from "./components/AnimatedChildren";
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 const DEFAULT_DELAY = 200;
 const ANIMATION_DURATION = 300;
 
-interface IRNAnimatedProps {
+export type AppearFrom = "left" | "right" | "top" | "bottom";
+
+export interface IRNAnimatedProps {
   style?: CustomStyleProp;
   children?: React.ReactNode;
   initialDelay?: number;

@@ -9,8 +9,7 @@ import {
   outputRangeByAppearFrom,
   initialPositionByAppearFrom,
 } from "./AnimatedUtils";
-
-export type AppearFrom = "left" | "right" | "top" | "bottom";
+import { AppearFrom } from "../RNAnimated";
 
 interface IAnimatedChildrenProps extends ViewProps {
   delay: number;

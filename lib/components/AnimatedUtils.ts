@@ -1,4 +1,4 @@
-import { AppearFrom } from "./AnimatedChildren";
+import { AppearFrom } from "../RNAnimated";
 
 const INITIAL_POSITION_POSITIVE = 20;
 const INITIAL_POSITION_NEGATIVE = -INITIAL_POSITION_POSITIVE;
