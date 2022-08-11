@@ -22,6 +22,7 @@
     </td>
    </tr>
 </table>
+
 # Installation
 
 Add the dependency:
